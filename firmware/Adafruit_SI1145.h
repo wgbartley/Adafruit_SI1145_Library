@@ -16,13 +16,6 @@
  ****************************************************/
 
 
-#if (ARDUINO >= 100)
- #include "Arduino.h"
-#else
- #include "WProgram.h"
-#endif
-#include <Wire.h>
-
 /* COMMANDS */
 #define SI1145_PARAM_QUERY 0x80
 #define SI1145_PARAM_SET 0xA0

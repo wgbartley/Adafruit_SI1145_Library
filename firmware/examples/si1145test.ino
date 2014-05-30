@@ -15,8 +15,7 @@
   BSD license, all text above must be included in any redistribution
  ****************************************************/
 
-#include <Wire.h>
-#include "Adafruit_SI1145.h"
+#include "Adafruit_SI1145/Adafruit_SI1145.h"
 
 Adafruit_SI1145 uv = Adafruit_SI1145();
 
@@ -25,9 +24,9 @@ void setup() {
   
   Serial.println("Adafruit SI1145 test");
   
-  if (! uv.begin()) {
+  while(! uv.begin()) {
     Serial.println("Didn't find Si1145");
-    while (1);
+    delay(1000);
   }
 
   Serial.println("OK!");

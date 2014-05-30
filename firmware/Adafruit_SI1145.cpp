@@ -15,6 +15,7 @@
   BSD license, all text above must be included in any redistribution
  ****************************************************/
 
+#include "application.h"
 #include "Adafruit_SI1145.h"
 
 Adafruit_SI1145::Adafruit_SI1145() {
